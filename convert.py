@@ -82,6 +82,7 @@ def main():
         netscale = 4
         file_url = ['https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth']
     elif args.model_name == 'realesr-general-x4v3':  # x4 VGG-style model (S size)
+        print("Setting up model: realesr-general-x4v3")
         model = SRVGGNetCompact(num_in_ch=3, num_out_ch=3, num_feat=64, num_conv=32, upscale=4, act_type='prelu')
         netscale = 4
         file_url = [
