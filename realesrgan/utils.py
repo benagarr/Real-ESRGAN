@@ -91,6 +91,7 @@ class RealESRGANer():
         img = torch.from_numpy(np.transpose(img, (2, 0, 1))).float()
         self.img = img.unsqueeze(0).to(self.device)
         if self.half:
+            print("HALVING IMAGE")
             self.img = self.img.half()
 
         # pre_pad

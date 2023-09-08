@@ -150,7 +150,7 @@ def main():
                 _, _, output = face_enhancer.enhance(img, has_aligned=False, only_center_face=False, paste_back=True)
             else:
             
-                check_trace = False
+                check_trace = True
                 print("Preprocessing")
                 upsampler.pre_process(img)
                 print("Tracing")
