@@ -165,7 +165,7 @@ def main():
                                                     shape=upsampler.img.shape,
                                                     color_layout=ct.colorlayout.RGB,
                                                     scale=scale,
-                                                    dtype=types.fp16)],
+                                                    dtype=type.fp16)],
                               outputs=[ct.ImageType(name="pred")])
 
                 # save without compressing
