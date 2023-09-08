@@ -160,6 +160,7 @@ def main():
                 
                 scale = 1 / 255.0
                 
+                print("STart conversion!")
                 model_from_torch = ct.convert(traced_model,
                               convert_to="mlprogram",
                               compute_precision=ct.precision.FLOAT16,
