@@ -155,6 +155,7 @@ def main():
                 print("Preprocessing")
                 upsampler.pre_process(img)
                 print("Tracing")
+                print("Image data type", upsampler.img.dtype)
                 traced_model = torch.jit.trace(upsampler.model, upsampler.img, check_trace=check_trace)
                 
                 scale = 1 / 255.0
@@ -165,8 +166,7 @@ def main():
                               inputs=[ct.ImageType(name="input",
                                                     shape=upsampler.img.shape,
                                                     color_layout=ct.colorlayout.RGB,
-                                                    scale=scale,
-                                                    dtype=types.fp16)],
+                                                    scale=scale)],
                               outputs=[ct.ImageType(name="pred")])
 
                 # save without compressing
