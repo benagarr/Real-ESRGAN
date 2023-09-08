@@ -155,12 +155,13 @@ def main():
             print('Error', error)
             print('If you encounter CUDA out of memory, try to set --tile with a smaller number.')
         else:
+            print("DONE")
 #            if args.ext == 'auto':
- #               extension = extension[1:]
-  #          else:
-   #             extension = args.ext
-    #        if img_mode == 'RGBA':  # RGBA images should be saved in png format
-     #           extension = 'png'
+#                extension = extension[1:]
+#            else:
+#                extension = args.ext
+#            if img_mode == 'RGBA':  # RGBA images should be saved in png format
+#                extension = 'png'
 #            if args.suffix == '':
 #                save_path = os.path.join(args.output, f'{imgname}.{extension}')
 #            else:
