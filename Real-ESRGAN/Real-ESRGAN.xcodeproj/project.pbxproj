@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		1967CE262AAAA2BF0088708A /* train_realesrgan_x4plus.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = train_realesrgan_x4plus.yml; sourceTree = "<group>"; };
+		1967CE272AAAA2BF0088708A /* train_realesrnet_x2plus.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = train_realesrnet_x2plus.yml; sourceTree = "<group>"; };
+		1967CE282AAAA2BF0088708A /* finetune_realesrgan_x4plus.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = finetune_realesrgan_x4plus.yml; sourceTree = "<group>"; };
+		1967CE292AAAA2BF0088708A /* train_realesrnet_x4plus.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = train_realesrnet_x4plus.yml; sourceTree = "<group>"; };
+		1967CE2A2AAAA2BF0088708A /* train_realesrgan_x2plus.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = train_realesrgan_x2plus.yml; sourceTree = "<group>"; };
+		1967CE2B2AAAA2BF0088708A /* finetune_realesrgan_x4plus_pairdata.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = finetune_realesrgan_x4plus_pairdata.yml; sourceTree = "<group>"; };
+		1967CE2E2AAAA2BF0088708A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1967CE2F2AAAA2BF0088708A /* inference_realesrgan.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = inference_realesrgan.py; path = ../inference_realesrgan.py; sourceTree = "<group>"; };
+		1967CE302AAAA2BF0088708A /* MANIFEST.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = MANIFEST.in; path = ../MANIFEST.in; sourceTree = "<group>"; };
+		1967CE312AAAA2BF0088708A /* requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = requirements.txt; path = ../requirements.txt; sourceTree = "<group>"; };
+		1967CE322AAAA2BF0088708A /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		1967CE342AAAA2BF0088708A /* anime_model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = anime_model.md; sourceTree = "<group>"; };
+		1967CE352AAAA2BF0088708A /* Training.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Training.md; sourceTree = "<group>"; };
+		1967CE362AAAA2BF0088708A /* ncnn_conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ncnn_conversion.md; sourceTree = "<group>"; };
+		1967CE372AAAA2BF0088708A /* FAQ.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FAQ.md; sourceTree = "<group>"; };
+		1967CE382AAAA2BF0088708A /* anime_comparisons.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = anime_comparisons.md; sourceTree = "<group>"; };
+		1967CE392AAAA2BF0088708A /* anime_video_model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = anime_video_model.md; sourceTree = "<group>"; };
+		1967CE3A2AAAA2BF0088708A /* anime_comparisons_CN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = anime_comparisons_CN.md; sourceTree = "<group>"; };
+		1967CE3B2AAAA2BF0088708A /* Training_CN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Training_CN.md; sourceTree = "<group>"; };
+		1967CE3C2AAAA2BF0088708A /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		1967CE3D2AAAA2BF0088708A /* feedback.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = feedback.md; sourceTree = "<group>"; };
+		1967CE3E2AAAA2BF0088708A /* model_zoo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = model_zoo.md; sourceTree = "<group>"; };
+		1967CE402AAAA2BF0088708A /* generate_meta_info_pairdata.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = generate_meta_info_pairdata.py; sourceTree = "<group>"; };
+		1967CE412AAAA2BF0088708A /* generate_meta_info.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = generate_meta_info.py; sourceTree = "<group>"; };
+		1967CE422AAAA2BF0088708A /* extract_subimages.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = extract_subimages.py; sourceTree = "<group>"; };
+		1967CE432AAAA2BF0088708A /* pytorch2onnx.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pytorch2onnx.py; sourceTree = "<group>"; };
+		1967CE442AAAA2BF0088708A /* generate_multiscale_DF2K.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = generate_multiscale_DF2K.py; sourceTree = "<group>"; };
+		1967CE452AAAA2BF0088708A /* VERSION */ = {isa = PBXFileReference; lastKnownFileType = text; name = VERSION; path = ../VERSION; sourceTree = "<group>"; };
+		1967CE462AAAA2BF0088708A /* setup.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = setup.cfg; path = ../setup.cfg; sourceTree = "<group>"; };
+		1967CE472AAAA2BF0088708A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1967CE482AAAA2BF0088708A /* cog.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = cog.yaml; path = ../cog.yaml; sourceTree = "<group>"; };
+		1967CE492AAAA2BF0088708A /* README_CN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README_CN.md; path = ../README_CN.md; sourceTree = "<group>"; };
+		1967CE4A2AAAA2BF0088708A /* cog_predict.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = cog_predict.py; path = ../cog_predict.py; sourceTree = "<group>"; };
+		1967CE4C2AAAA2BF0088708A /* realesrgan_logo_gi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realesrgan_logo_gi.png; sourceTree = "<group>"; };
+		1967CE4D2AAAA2BF0088708A /* teaser-text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teaser-text.png"; sourceTree = "<group>"; };
+		1967CE4E2AAAA2BF0088708A /* realesrgan_logo_ai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realesrgan_logo_ai.png; sourceTree = "<group>"; };
+		1967CE4F2AAAA2BF0088708A /* realesrgan_logo_av.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realesrgan_logo_av.png; sourceTree = "<group>"; };
+		1967CE502AAAA2BF0088708A /* realesrgan_logo_gv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realesrgan_logo_gv.png; sourceTree = "<group>"; };
+		1967CE512AAAA2BF0088708A /* realesrgan_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realesrgan_logo.png; sourceTree = "<group>"; };
+		1967CE522AAAA2BF0088708A /* teaser.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teaser.jpg; sourceTree = "<group>"; };
+		1967CE532AAAA2BF0088708A /* setup.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = setup.py; path = ../setup.py; sourceTree = "<group>"; };
+		1967CE552AAAA2BF0088708A /* test_model.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_model.py; sourceTree = "<group>"; };
+		1967CE562AAAA2BF0088708A /* test_utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_utils.py; sourceTree = "<group>"; };
+		1967CE572AAAA2BF0088708A /* test_discriminator_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_discriminator_arch.py; sourceTree = "<group>"; };
+		1967CE582AAAA2BF0088708A /* test_dataset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_dataset.py; sourceTree = "<group>"; };
+		1967CE5A2AAAA2BF0088708A /* test_realesrgan_paired_dataset.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test_realesrgan_paired_dataset.yml; sourceTree = "<group>"; };
+		1967CE5C2AAAA2BF0088708A /* comic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comic.png; sourceTree = "<group>"; };
+		1967CE5D2AAAA2BF0088708A /* baboon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baboon.png; sourceTree = "<group>"; };
+		1967CE5F2AAAA2BF0088708A /* comic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comic.png; sourceTree = "<group>"; };
+		1967CE602AAAA2BF0088708A /* baboon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baboon.png; sourceTree = "<group>"; };
+		1967CE612AAAA2BF0088708A /* meta_info_pair.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = meta_info_pair.txt; sourceTree = "<group>"; };
+		1967CE622AAAA2BF0088708A /* test_realesrnet_model.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test_realesrnet_model.yml; sourceTree = "<group>"; };
+		1967CE632AAAA2BF0088708A /* test_realesrgan_model.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test_realesrgan_model.yml; sourceTree = "<group>"; };
+		1967CE652AAAA2BF0088708A /* lock.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = lock.mdb; sourceTree = "<group>"; };
+		1967CE662AAAA2BF0088708A /* data.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.mdb; sourceTree = "<group>"; };
+		1967CE672AAAA2BF0088708A /* meta_info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = meta_info.txt; sourceTree = "<group>"; };
+		1967CE682AAAA2BF0088708A /* meta_info_gt.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = meta_info_gt.txt; sourceTree = "<group>"; };
+		1967CE6A2AAAA2BF0088708A /* lock.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = lock.mdb; sourceTree = "<group>"; };
+		1967CE6B2AAAA2BF0088708A /* data.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.mdb; sourceTree = "<group>"; };
+		1967CE6C2AAAA2BF0088708A /* meta_info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = meta_info.txt; sourceTree = "<group>"; };
+		1967CE6D2AAAA2BF0088708A /* test_realesrgan_dataset.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test_realesrgan_dataset.yml; sourceTree = "<group>"; };
+		1967CE6E2AAAA2BF0088708A /* inference_realesrgan_video.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = inference_realesrgan_video.py; path = ../inference_realesrgan_video.py; sourceTree = "<group>"; };
+		1967CE6F2AAAA2BF0088708A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1967CE712AAAA2BF0088708A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1967CE732AAAA2BF0088708A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1967CE752AAAA2BF0088708A /* realesrnet_model.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = realesrnet_model.py; sourceTree = "<group>"; };
+		1967CE762AAAA2BF0088708A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1967CE772AAAA2BF0088708A /* realesrgan_model.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = realesrgan_model.py; sourceTree = "<group>"; };
+		1967CE782AAAA2BF0088708A /* utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		1967CE792AAAA2BF0088708A /* train.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = train.py; sourceTree = "<group>"; };
+		1967CE7B2AAAA2BF0088708A /* discriminator_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = discriminator_arch.py; sourceTree = "<group>"; };
+		1967CE7C2AAAA2BF0088708A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1967CE7D2AAAA2BF0088708A /* srvgg_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = srvgg_arch.py; sourceTree = "<group>"; };
+		1967CE7F2AAAA2BF0088708A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1967CE802AAAA2BF0088708A /* realesrgan_dataset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = realesrgan_dataset.py; sourceTree = "<group>"; };
+		1967CE812AAAA2BF0088708A /* realesrgan_paired_dataset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = realesrgan_paired_dataset.py; sourceTree = "<group>"; };
+		1967CE832AAAA2BF0088708A /* tree_alpha_16bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_alpha_16bit.png; sourceTree = "<group>"; };
+		1967CE852AAAA2BF0088708A /* onepiece_demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = onepiece_demo.mp4; sourceTree = "<group>"; };
+		1967CE862AAAA2BF0088708A /* 00017_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 00017_gray.png; sourceTree = "<group>"; };
+		1967CE872AAAA2BF0088708A /* OST_009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OST_009.png; sourceTree = "<group>"; };
+		1967CE882AAAA2BF0088708A /* children-alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "children-alpha.png"; sourceTree = "<group>"; };
+		1967CE892AAAA2BF0088708A /* 0014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0014.jpg; sourceTree = "<group>"; };
+		1967CE8A2AAAA2BF0088708A /* wolf_gray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolf_gray.jpg; sourceTree = "<group>"; };
+		1967CE8B2AAAA2BF0088708A /* 0030.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0030.jpg; sourceTree = "<group>"; };
+		1967CE8C2AAAA2BF0088708A /* 00003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 00003.png; sourceTree = "<group>"; };
+		1967CE8D2AAAA2BF0088708A /* ADE_val_00000114.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ADE_val_00000114.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1967CE1E2AAAA2A60088708A = {
+			isa = PBXGroup;
+			children = (
+				1967CE4B2AAAA2BF0088708A /* assets */,
+				1967CE322AAAA2BF0088708A /* CODE_OF_CONDUCT.md */,
+				1967CE4A2AAAA2BF0088708A /* cog_predict.py */,
+				1967CE482AAAA2BF0088708A /* cog.yaml */,
+				1967CE332AAAA2BF0088708A /* docs */,
+				1967CE2C2AAAA2BF0088708A /* experiments */,
+				1967CE6E2AAAA2BF0088708A /* inference_realesrgan_video.py */,
+				1967CE2F2AAAA2BF0088708A /* inference_realesrgan.py */,
+				1967CE822AAAA2BF0088708A /* inputs */,
+				1967CE6F2AAAA2BF0088708A /* LICENSE */,
+				1967CE302AAAA2BF0088708A /* MANIFEST.in */,
+				1967CE252AAAA2BF0088708A /* options */,
+				1967CE492AAAA2BF0088708A /* README_CN.md */,
+				1967CE472AAAA2BF0088708A /* README.md */,
+				1967CE722AAAA2BF0088708A /* realesrgan */,
+				1967CE312AAAA2BF0088708A /* requirements.txt */,
+				1967CE3F2AAAA2BF0088708A /* scripts */,
+				1967CE462AAAA2BF0088708A /* setup.cfg */,
+				1967CE532AAAA2BF0088708A /* setup.py */,
+				1967CE542AAAA2BF0088708A /* tests */,
+				1967CE452AAAA2BF0088708A /* VERSION */,
+				1967CE702AAAA2BF0088708A /* weights */,
+			);
+			sourceTree = "<group>";
+		};
+		1967CE252AAAA2BF0088708A /* options */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE262AAAA2BF0088708A /* train_realesrgan_x4plus.yml */,
+				1967CE272AAAA2BF0088708A /* train_realesrnet_x2plus.yml */,
+				1967CE282AAAA2BF0088708A /* finetune_realesrgan_x4plus.yml */,
+				1967CE292AAAA2BF0088708A /* train_realesrnet_x4plus.yml */,
+				1967CE2A2AAAA2BF0088708A /* train_realesrgan_x2plus.yml */,
+				1967CE2B2AAAA2BF0088708A /* finetune_realesrgan_x4plus_pairdata.yml */,
+			);
+			name = options;
+			path = ../options;
+			sourceTree = "<group>";
+		};
+		1967CE2C2AAAA2BF0088708A /* experiments */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE2D2AAAA2BF0088708A /* pretrained_models */,
+			);
+			name = experiments;
+			path = ../experiments;
+			sourceTree = "<group>";
+		};
+		1967CE2D2AAAA2BF0088708A /* pretrained_models */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE2E2AAAA2BF0088708A /* README.md */,
+			);
+			path = pretrained_models;
+			sourceTree = "<group>";
+		};
+		1967CE332AAAA2BF0088708A /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE342AAAA2BF0088708A /* anime_model.md */,
+				1967CE352AAAA2BF0088708A /* Training.md */,
+				1967CE362AAAA2BF0088708A /* ncnn_conversion.md */,
+				1967CE372AAAA2BF0088708A /* FAQ.md */,
+				1967CE382AAAA2BF0088708A /* anime_comparisons.md */,
+				1967CE392AAAA2BF0088708A /* anime_video_model.md */,
+				1967CE3A2AAAA2BF0088708A /* anime_comparisons_CN.md */,
+				1967CE3B2AAAA2BF0088708A /* Training_CN.md */,
+				1967CE3C2AAAA2BF0088708A /* CONTRIBUTING.md */,
+				1967CE3D2AAAA2BF0088708A /* feedback.md */,
+				1967CE3E2AAAA2BF0088708A /* model_zoo.md */,
+			);
+			name = docs;
+			path = ../docs;
+			sourceTree = "<group>";
+		};
+		1967CE3F2AAAA2BF0088708A /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE402AAAA2BF0088708A /* generate_meta_info_pairdata.py */,
+				1967CE412AAAA2BF0088708A /* generate_meta_info.py */,
+				1967CE422AAAA2BF0088708A /* extract_subimages.py */,
+				1967CE432AAAA2BF0088708A /* pytorch2onnx.py */,
+				1967CE442AAAA2BF0088708A /* generate_multiscale_DF2K.py */,
+			);
+			name = scripts;
+			path = ../scripts;
+			sourceTree = "<group>";
+		};
+		1967CE4B2AAAA2BF0088708A /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE4C2AAAA2BF0088708A /* realesrgan_logo_gi.png */,
+				1967CE4D2AAAA2BF0088708A /* teaser-text.png */,
+				1967CE4E2AAAA2BF0088708A /* realesrgan_logo_ai.png */,
+				1967CE4F2AAAA2BF0088708A /* realesrgan_logo_av.png */,
+				1967CE502AAAA2BF0088708A /* realesrgan_logo_gv.png */,
+				1967CE512AAAA2BF0088708A /* realesrgan_logo.png */,
+				1967CE522AAAA2BF0088708A /* teaser.jpg */,
+			);
+			name = assets;
+			path = ../assets;
+			sourceTree = "<group>";
+		};
+		1967CE542AAAA2BF0088708A /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE552AAAA2BF0088708A /* test_model.py */,
+				1967CE562AAAA2BF0088708A /* test_utils.py */,
+				1967CE572AAAA2BF0088708A /* test_discriminator_arch.py */,
+				1967CE582AAAA2BF0088708A /* test_dataset.py */,
+				1967CE592AAAA2BF0088708A /* data */,
+			);
+			name = tests;
+			path = ../tests;
+			sourceTree = "<group>";
+		};
+		1967CE592AAAA2BF0088708A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE5A2AAAA2BF0088708A /* test_realesrgan_paired_dataset.yml */,
+				1967CE5B2AAAA2BF0088708A /* gt */,
+				1967CE5E2AAAA2BF0088708A /* lq */,
+				1967CE612AAAA2BF0088708A /* meta_info_pair.txt */,
+				1967CE622AAAA2BF0088708A /* test_realesrnet_model.yml */,
+				1967CE632AAAA2BF0088708A /* test_realesrgan_model.yml */,
+				1967CE642AAAA2BF0088708A /* gt.lmdb */,
+				1967CE682AAAA2BF0088708A /* meta_info_gt.txt */,
+				1967CE692AAAA2BF0088708A /* lq.lmdb */,
+				1967CE6D2AAAA2BF0088708A /* test_realesrgan_dataset.yml */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		1967CE5B2AAAA2BF0088708A /* gt */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE5C2AAAA2BF0088708A /* comic.png */,
+				1967CE5D2AAAA2BF0088708A /* baboon.png */,
+			);
+			path = gt;
+			sourceTree = "<group>";
+		};
+		1967CE5E2AAAA2BF0088708A /* lq */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE5F2AAAA2BF0088708A /* comic.png */,
+				1967CE602AAAA2BF0088708A /* baboon.png */,
+			);
+			path = lq;
+			sourceTree = "<group>";
+		};
+		1967CE642AAAA2BF0088708A /* gt.lmdb */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE652AAAA2BF0088708A /* lock.mdb */,
+				1967CE662AAAA2BF0088708A /* data.mdb */,
+				1967CE672AAAA2BF0088708A /* meta_info.txt */,
+			);
+			path = gt.lmdb;
+			sourceTree = "<group>";
+		};
+		1967CE692AAAA2BF0088708A /* lq.lmdb */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE6A2AAAA2BF0088708A /* lock.mdb */,
+				1967CE6B2AAAA2BF0088708A /* data.mdb */,
+				1967CE6C2AAAA2BF0088708A /* meta_info.txt */,
+			);
+			path = lq.lmdb;
+			sourceTree = "<group>";
+		};
+		1967CE702AAAA2BF0088708A /* weights */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE712AAAA2BF0088708A /* README.md */,
+			);
+			name = weights;
+			path = ../weights;
+			sourceTree = "<group>";
+		};
+		1967CE722AAAA2BF0088708A /* realesrgan */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE732AAAA2BF0088708A /* __init__.py */,
+				1967CE742AAAA2BF0088708A /* models */,
+				1967CE782AAAA2BF0088708A /* utils.py */,
+				1967CE792AAAA2BF0088708A /* train.py */,
+				1967CE7A2AAAA2BF0088708A /* archs */,
+				1967CE7E2AAAA2BF0088708A /* data */,
+			);
+			name = realesrgan;
+			path = ../realesrgan;
+			sourceTree = "<group>";
+		};
+		1967CE742AAAA2BF0088708A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE752AAAA2BF0088708A /* realesrnet_model.py */,
+				1967CE762AAAA2BF0088708A /* __init__.py */,
+				1967CE772AAAA2BF0088708A /* realesrgan_model.py */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		1967CE7A2AAAA2BF0088708A /* archs */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE7B2AAAA2BF0088708A /* discriminator_arch.py */,
+				1967CE7C2AAAA2BF0088708A /* __init__.py */,
+				1967CE7D2AAAA2BF0088708A /* srvgg_arch.py */,
+			);
+			path = archs;
+			sourceTree = "<group>";
+		};
+		1967CE7E2AAAA2BF0088708A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE7F2AAAA2BF0088708A /* __init__.py */,
+				1967CE802AAAA2BF0088708A /* realesrgan_dataset.py */,
+				1967CE812AAAA2BF0088708A /* realesrgan_paired_dataset.py */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		1967CE822AAAA2BF0088708A /* inputs */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE832AAAA2BF0088708A /* tree_alpha_16bit.png */,
+				1967CE842AAAA2BF0088708A /* video */,
+				1967CE862AAAA2BF0088708A /* 00017_gray.png */,
+				1967CE872AAAA2BF0088708A /* OST_009.png */,
+				1967CE882AAAA2BF0088708A /* children-alpha.png */,
+				1967CE892AAAA2BF0088708A /* 0014.jpg */,
+				1967CE8A2AAAA2BF0088708A /* wolf_gray.jpg */,
+				1967CE8B2AAAA2BF0088708A /* 0030.jpg */,
+				1967CE8C2AAAA2BF0088708A /* 00003.png */,
+				1967CE8D2AAAA2BF0088708A /* ADE_val_00000114.jpg */,
+			);
+			name = inputs;
+			path = ../inputs;
+			sourceTree = "<group>";
+		};
+		1967CE842AAAA2BF0088708A /* video */ = {
+			isa = PBXGroup;
+			children = (
+				1967CE852AAAA2BF0088708A /* onepiece_demo.mp4 */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		1967CE1F2AAAA2A60088708A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 1967CE222AAAA2A60088708A /* Build configuration list for PBXProject "Real-ESRGAN" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1967CE1E2AAAA2A60088708A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		1967CE232AAAA2A60088708A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1967CE242AAAA2A60088708A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1967CE222AAAA2A60088708A /* Build configuration list for PBXProject "Real-ESRGAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1967CE232AAAA2A60088708A /* Debug */,
+				1967CE242AAAA2A60088708A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1967CE1F2AAAA2A60088708A /* Project object */;
+}
