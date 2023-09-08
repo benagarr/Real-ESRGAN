@@ -93,6 +93,7 @@
 		1967CE8B2AAAA2BF0088708A /* 0030.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0030.jpg; sourceTree = "<group>"; };
 		1967CE8C2AAAA2BF0088708A /* 00003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 00003.png; sourceTree = "<group>"; };
 		1967CE8D2AAAA2BF0088708A /* ADE_val_00000114.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ADE_val_00000114.jpg; sourceTree = "<group>"; };
+		1967CE8E2AAAAD440088708A /* convert.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = convert.py; path = ../convert.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -107,6 +108,7 @@
 				1967CE2C2AAAA2BF0088708A /* experiments */,
 				1967CE6E2AAAA2BF0088708A /* inference_realesrgan_video.py */,
 				1967CE2F2AAAA2BF0088708A /* inference_realesrgan.py */,
+				1967CE8E2AAAAD440088708A /* convert.py */,
 				1967CE822AAAA2BF0088708A /* inputs */,
 				1967CE6F2AAAA2BF0088708A /* LICENSE */,
 				1967CE302AAAA2BF0088708A /* MANIFEST.in */,
