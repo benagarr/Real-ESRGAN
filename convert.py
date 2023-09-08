@@ -152,6 +152,20 @@ def main():
                 upsampler.pre_process(img)
                 print("Tracing")
                 traced_model = torch.jit.trace(upsampler.model, upsampler.img, check_trace=check_trace)
+                
+                scale = 1 / 255.0
+                
+                model_from_torch = ct.convert(traced_model,
+                              convert_to="mlprogram",
+                              compute_precision=ct.precision.FLOAT16,
+                              inputs=[ct.ImageType(name="input",
+                                                    shape=upsampler.img.shape,
+                                                    color_layout=ct.colorlayout.RGB,
+                                                    scale=scale)]
+                              outputs=[ct.ImageType(name="pred")])
+
+                # save without compressing
+                model_from_torch.save('/content/result.mlpackage')
             
             
 #                output, _ = upsampler.enhance(img, outscale=args.outscale)
