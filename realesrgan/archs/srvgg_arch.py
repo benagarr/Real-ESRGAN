@@ -66,4 +66,7 @@ class SRVGGNetCompact(nn.Module):
         # add the nearest upsampled image, so that the network learns the residual
         base = F.interpolate(x, scale_factor=self.upscale, mode='nearest')
         out += base
+        
+        out = torch.mul(out, 255)
+        
         return out
