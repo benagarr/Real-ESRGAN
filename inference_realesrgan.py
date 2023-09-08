@@ -130,7 +130,7 @@ def main():
     else:
         paths = sorted(glob.glob(os.path.join(args.input, '*')))
 
-    print "PATHS", paths
+    print("PATHS", paths)
     for idx, path in enumerate(paths):
         imgname, extension = os.path.splitext(os.path.basename(path))
         print('Testing', idx, imgname)
