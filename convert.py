@@ -148,7 +148,10 @@ def main():
             else:
             
                 check_trace = False
-                traced_model = torch.jit.trace(upsampler.model, img, check_trace=check_trace)
+                print("Preprocessing")
+                upsampler.pre_process(img)
+                print("Tracing")
+                traced_model = torch.jit.trace(upsampler.model, upsampler.img, check_trace=check_trace)
             
             
 #                output, _ = upsampler.enhance(img, outscale=args.outscale)
