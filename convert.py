@@ -10,6 +10,7 @@ from realesrgan import RealESRGANer
 from realesrgan.archs.srvgg_arch import SRVGGNetCompact
 
 import coremltools as ct
+from coremltools.converters.mil.mil import types
 
 
 
@@ -165,7 +166,7 @@ def main():
                                                     shape=upsampler.img.shape,
                                                     color_layout=ct.colorlayout.RGB,
                                                     scale=scale,
-                                                    dtype=type.FLOAT16)],
+                                                    dtype=types.fp16)],
                               outputs=[ct.ImageType(name="pred")])
 
                 # save without compressing
