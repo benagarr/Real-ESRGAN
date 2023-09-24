@@ -172,7 +172,7 @@ def main():
                               outputs=[ct.ImageType(name="pred")])
 
                 # save without compressing
-                model_from_torch.save('/content/result.mlpackage')
+                model_from_torch.save('/content/' + args.output + '.mlpackage')
             
             
 #                output, _ = upsampler.enhance(img, outscale=args.outscale)
